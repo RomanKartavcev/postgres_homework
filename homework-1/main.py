@@ -5,7 +5,7 @@ import os
 
 
 def main():
-    with psycopg2.connect(host='localhost', database='north', user='postgres', password='1012') as conn:
+    with psycopg2.connect(host='localhost', database='north', user='postgres', password='1234') as conn:
         with open(os.path.join(os.getcwd(), 'north_data', 'customers_data.csv'), encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
